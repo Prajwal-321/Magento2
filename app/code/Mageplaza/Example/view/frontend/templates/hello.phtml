@@ -1,0 +1,9 @@
+<h2><?= $block->getWelcomeText(); ?></h2>
+<p>Today's Date: <?= $block->getTodayDate(); ?></p>
+
+<!-- Render child block -->
+<div>
+    <?= $block->getChildHtml('custom.message.block'); ?>
+</div>
+<?= $block->getChildHtml('custom.cms.block') ?>
+

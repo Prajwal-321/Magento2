@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Magento\Cms\Block\Block" name="custom.cms.block">
+                <arguments>
+                    <argument name="sale_banner" xsi:type="string">sale_banner</argument>
+                </arguments>
+            </block>
+
+
+            <!-- Parent Block -->
+            <block class="Mageplaza\Example\Block\Hello"
+                   name="custom.hello.block"
+                   template="Mageplaza_Example::hello.phtml">
+                   
+                <!-- Nested Child Block -->
+                <block class="Mageplaza\Example\Block\Message"
+                       name="custom.message.block"
+                       template="Mageplaza_Example::message.phtml"/>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
