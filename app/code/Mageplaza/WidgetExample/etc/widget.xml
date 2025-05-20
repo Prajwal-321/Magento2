@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="mageplaza_widgetexample_title_widget" class="Mageplaza\WidgetExample\Block\Widget\Title">
+        <label translate="true">Custom Title Widget</label>
+        <description translate="true">Displays a title entered by the admin</description>
+        <parameters>
+            <parameter name="widget_title" xsi:type="text" required="true" sort_order="10" visible="true">
+                <label translate="true">Title</label>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>
